@@ -1,3 +1,70 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+/* Margin bottom by footer height */
+body {
+  margin-bottom: 120px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background-color: #fff;
+}
+.clear {
+  clear: both;
+}
+.footer-logos {
+  text-align: center;
+  background-color: #fff;
+  padding-top: 10px;
+}
+.footer-logos img,
+.footer-logos a {
+  display: inline;
+  width: 120px;
+  margin: 5px 15px;
+}
+.footer-logos img:first-child,
+.footer-logos a:first-child {
+  margin-left: 0;
+}
+.footer-logos img:last-child,
+.footer-logos a:last-child {
+  margin-right: 0;
+}
+/*
+Tu Hoang
+March 2016
+Index page css
+*/
+#main-content #launch-button {
+  width: 20%;
+  float: left;
+}
+#main-content #lauch-description {
+  width: 70%;
+  margin-right: 20px;
+  float: left;
+  font-size: 12px;
+  padding-top: 10px;
+}
+#main-content #menu {
+  margin-top: 60px;
+}
+#main-content #menu #menu-nav {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+#main-content #sub-description {
+  margin-top: 60px;
+}
 #banner {
   font-family: "sans serif" !important;
 }

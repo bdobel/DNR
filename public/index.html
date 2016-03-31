@@ -34,7 +34,7 @@
             <img src="img/MDlogo.gif" alt="maryland.gov" />
           </a>
         </div>
-<!--         <span class="pull-right" id="home-link">
+        <!--         <span class="pull-right" id="home-link">
           <a href="index.html"><i class="fa fa-2x fa-home"></i></a>
         </span> -->
         <h3 class="pull-left">
@@ -46,9 +46,187 @@
     </div>
     <hr>
     <div id="main-content">
-      <div>
-        
+      <a id="launch-button" class="pull-left" href="http://salisburyu.maps.arcgis.com/apps/webappviewer/index.html?id=1bcdd8b17c1b4f45a6cdd0f5adfc6e46">
+        <img src="img/Launch_Tool.PNG" alt="Launch Tool" />
+      </a>
+      <div class="pull-left" id="lauch-description">
+        <p>
+          The Chesapeake Bay is at risk to coastal hazards such as hurricanes, severe storms, floods and sea level rise. Coastal communities such as Oxford, Maryland must understand these risks and plan for the future to protect its residents and infrastructure.
+        </p>
+        <p>
+          This GIS tool is a model that was developed to provide the Town of Oxford an interactive resource that
+          <br> (1) prioritizes properties for targeting stormwater green infrastructure practices based on the likelihood of flooding from significant rain events and future flooding events from sea level rise and
+          <br> (2) identifies the appropriate types of stormwater green infrastructure practices that can be located on a particular parcel to help manage flooding events based on soil types, ground water levels, size of parcel area and contributing runoff.
+        </p>
       </div>
+      <div class="clear"></div>
+      <div id="menu">
+        <div>
+          <!-- Nav tabs -->
+          <ul class="nav nav-pills nav-stacked" role="tablist" id="menu-nav">
+            <li role="presentation" class="active">
+              <a href="#tool-guide" aria-controls="tool-guide" role="tab" data-toggle="tab">Tool Guide</a>
+            </li>
+            <li role="presentation">
+              <a href="#rain-garden-parcels" aria-controls="rain-garden-parcels" role="tab" data-toggle="tab">Rain Garden Parcels</a>
+            </li>
+            <li role="presentation">
+              <a href="#bio-retention-area-parcels" aria-controls="bio-retention-area-parcels" role="tab" data-toggle="tab">
+                Bio retention Area Parcels
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#grass-channel-parcels" aria-controls="grass-channel-parcels" role="tab" data-toggle="tab">
+              Grass Channel Parcels
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#stormwater-accumulation-parcels" aria-controls="stormwater-accumulation-parcels" role="tab" data-toggle="tab">
+              Stormwater Accummulation Parcels
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#public-or-private-parcels" aria-controls="public-or-private-parcels" role="tab" data-toggle="tab">
+              Public or Private Parcels
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#coastal-hazard-priority-rank" aria-controls="coastal-hazard-priority-rank" role="tab" data-toggle="tab">
+              Coastal Hazards Priority Rank
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#2050-mean-sea-level-exposure" aria-controls="2050-mean-sea-level-exposure" role="tab" data-toggle="tab">
+              2050 Mean Sea Level Exposure
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#2050-mhhw-exposure" aria-controls="2050-mhhw-exposure" role="tab" data-toggle="tab">
+              2050 MHHW Exposure
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#2100-mean-sea-level-exposure" aria-controls="2100-mean-sea-level-exposure" role="tab" data-toggle="tab">
+              2100 Mean Sea Level Exposure
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#2100-mhhw-exposure" aria-controls="2100-mhhw-exposure" role="tab" data-toggle="tab">
+              2100 MHHW Exposure
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#critical-area-designations" aria-controls="critical-area-designations" role="tab" data-toggle="tab">
+              Critial Area Designations
+              </a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tool-guide">
+              <p class="text-info">
+                First, the user is welcomed by a simple topographic map of Oxford, MD.
+                <br>The user can find&nbsp;parcels by owner's name using the Oxford Property Parcels drop-down in the tool's&nbsp;search bar.
+                <br>
+                <br>After the parcel layer is displayed, the user can add the following&nbsp;Green Infrastructure Layers&nbsp;to see if their property parcel(s) qualify for a specific Best Management Practice&nbsp;
+                <br>(Example: Rain Gardens, Bioretention Area, Grass Channel).
+                <br>
+                <br>Finally, the user can add Mean Sea Level Rise (MSL)
+                <br>and/or Mean High Higher Water (MHHW) polygons to the map to see how the user's property parcel&nbsp;may be&nbsp;affected by the MSL and MHHW phenomena. &nbsp;
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="rain-garden-parcels">
+              <p class="text-info">
+                Rain Gardens Parcels are areas where rain gardens are an appropriate stormwater management solution somewhere within that site based on factors such as
+                <br>soil type and water depth.
+                <br>
+                <br>Rain gardens are landscaped depressions that capture and treat stormwater runoff. They contain soil and herbaceous plants, allowing pollutant removal by the slow infiltration of runoff. A single site will often use several rain gardens.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="bio-retention-area-parcels">
+              <p class="text-info">
+                Bioretention Area Parcels display parcels that contain suitable locations to treat stormwater using bioretention practices, based on factors such as drainage area,
+                <br>soil type and water depth.
+                <br>
+                <br>Bioretentions are landscaped depressions that include a filter bed of sand, soil and organic material that ponds stormwater and filters it through the bed. An underdrain is often another component of bioretentions.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="grass-channel-parcels">
+              <p class="text-info">
+                Grass Channel Parcels are areas when grass channels may help address stormwater concerns somewhere within that site based on environmental factors.
+                <br>
+                <br>Grass channels can provide a modest amount of stormwater capture and filtering, and are a good alternative to curbs and gutters.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="stormwater-accumulation-parcels">
+              <p class="text-info">
+                Highlighted areas are locations throughout town where stormwater may cause flooding based on elevation, development, stormwater flow and the existence of natural features such as wetlands.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="public-or-private-parcels">
+              <p class="text-info">
+                This layer displays type of parcel ownership at a glance
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="coastal-hazard-priority-rank">
+              <p class="text-info">
+                This layer ranks the priority of areas in town based on their vulnerability to existing and future coastal hazards based on projected sea level rise
+                <br>and areas of minor coastal flooding.
+                <br>
+                <br>Town planners may use this tool to help them prioritize actions based on a color coded scale of red (greater risk to coastal hazard), to orange, then yellow, then green.
+                <br>Users can click on a single parcel to view who owns the property, its overall risk to hazards, its land use classification, and its exposure to both mean high high water and sea level rise.
+                <br>
+                <br>The pop-up window also displays whether or not the parcel is an appropriate location for a grass channel, bioretention or rain garden.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="2050-mean-sea-level-exposure">
+              <p class="text-info">
+                Anticipated landward extent of sea levels in the year 2050 is displayed.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="2050-mhhw-exposure">
+              <p class="text-info">
+                This layer demonstrates how far inland tidewaters will reach and where flooding will occur when there is a higher high tide event, anticipated for the year 2050.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="2100-mean-sea-level-exposure">
+              <p class="text-info">
+                Anticipated landward extent of sea levels in the year 2100 is displayed.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="2100-mhhw-exposure">
+              <p class="text-info">
+                This layer demonstrates how far inland tidewaters will reach and where flooding will occur when there is a higher high tide event, anticipated for the year 2100.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="critical-area-designations">
+              <p class="text-info">
+                The Town’s Critical Area Designations are displayed, which are based on existing land use and intensity of development at the time of mapping. The designations have different development and land use standards and regulations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <p class="text-center" id="sub-description">
+        <small>
+          This project was prepared for the Critical Area Commission for the 
+          Cheseapeake and Atlantic Coastal Bays by Salisbury University 
+          Eastern Shore Regional GIS Cooperative under award number
+          NA12NOS4190136 from the Office of Ocean and Coastal Resource Management (OCRM),
+          National Oceanic and Atmospheric Administration (NOAA), 
+          <br>through the Maryland Department of Natural Resources Chesapeake and Coastal Program. 
+          <br>The statements, findings, conclusions and recommendations are those of the author(s) 
+          and do not necessarily reflect the views of NOAA or the U.S. Department of Commerce.
+        </small>
+      </p>
+    </div>
+  </div>
+  <div id="footer" class="footer">
+    <div class="footer-logos">
+      <a href="http://www.esrgc.org/"><img src="img/esrgc_logo_smaller.png" class="img-responsive" alt="ESRGC Logo"></a>
+      <a href="http://doit.maryland.gov/"><img src="img/DNR_logo.jpg" class="img-responsive" alt="DNR logo"></a>
+      <a href="http://www.salisbury.edu"><img src="img/SU logo.png" class="img-responsive" alt="Salisbury Univ Logo"></a>
     </div>
   </div>
   <!-- Bootstrap core JavaScript
