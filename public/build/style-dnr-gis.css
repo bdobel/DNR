@@ -1,0 +1,44 @@
+#banner {
+  font-family: "sans serif" !important;
+}
+.navbar-wrapper {
+  position: relative;
+  margin-top: 15px;
+  font-size: 80%;
+  opacity: .8;
+}
+.navbar-wrapper.fixed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.navbar-wrapper h1,
+.navbar-wrapper h2,
+.navbar-wrapper h3 {
+  text-transform: uppercase;
+}
+.navbar-wrapper a {
+  padding: 0 5px 0 0;
+  text-decoration: none;
+}
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-wrapper #mdlogo {
+  float: left;
+  align-self: center;
+}
+.navbar-wrapper #home-link {
+  padding-top: 25px;
+  padding-right: 5px;
+}

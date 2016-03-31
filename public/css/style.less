@@ -1,0 +1,53 @@
+@import "banner.less";
+@import "variables.less";
+#banner {
+  font-family: "sans serif" !important;
+}
+
+.navbar-wrapper {
+  position: relative;
+  margin-top: 15px;
+  &.fixed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+  }
+  font-size: 80%;
+  // background: #386603;
+  opacity: .8;
+  // color: #fff;
+  h1,h2,h3 {
+  	// margin-top: 0;
+    text-transform: uppercase;
+    small {
+      // color: white;
+    }
+  }
+  a {
+    padding: 0 5px 0 0;
+    text-decoration: none;
+    // color: #fff;
+  }
+  > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+    .container {
+      width: auto;
+    }
+  }
+  #mdlogo {
+    float: left;
+    align-self: center;
+    // margin-top: 8px;
+  }
+  #home-link {
+    padding-top: 25px;
+    padding-right: 5px;
+  }
+}
